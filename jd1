@@ -1,0 +1,238 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pjym</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"">
+	<!-- 这是在线引入的bootstrap的css -->
+	<script>   
+		(function (doc, win) {
+		        var docEl = doc.documentElement,
+		            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		            recalc = function () {
+		                var clientWidth = docEl.clientWidth;
+		                if (!clientWidth) return;
+		                if(clientWidth>=640){
+		                    docEl.style.fontSize = '100px';
+		                }else{
+		                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+		                }
+		            };
+		        if (!doc.addEventListener) return;
+		        win.addEventListener(resizeEvt, recalc, false);
+		        doc.addEventListener('DOMContentLoaded', recalc, false);
+		    })(document, window);
+</script> 
+	<script src="jquery-3.2.1.min.js">
+	</script>
+ 
+	<style>
+	*{margin: 0;padding: 0;}
+			div,span,p,a{
+				font-size: 0.44rem;
+			}
+		@media screen and (min-width: 480px) {
+			
+    		.outer{
+    			display: -webkit-flex;
+			    display: flex;
+    			margin: 41px 10px;
+    			
+    		}
+    		.inner{
+    			text-align: center;
+    			margin:0px auto; 
+    		}
+    		.inner{
+    			font-size: 0.5rem;
+    			width: 200px;
+    		}
+    		.inner2{
+    			
+    			width:140px;
+    		}
+    		.inner2 a{
+    			text-decoration: none;
+    			color: red;
+    		}
+    		.outer div{
+				line-height: 45px;
+    		}
+    		.nike{
+    			border: 1px solid black;
+    			width:250px;
+    		}
+			.f_l{
+				float: left;
+			}
+			.pingfen{
+				margin: 30px 0px 20px 20px;
+				font-size:0.45rem;
+			}
+			.outer_two{
+				overflow: hidden;
+				margin-left:30px;
+			}
+			.outer_two .nike{
+				margin-right:30px; 
+			}
+			.outer .inner_one{
+				margin-left: 50px; 
+			}
+			.pingfen span{
+				margin-left:15px; 
+			}
+			.xingxing{
+				margin-top: 10px;
+				
+			}
+			.mengban{
+				margin-top:40px; 
+				width: 100%;
+				height: 400px;
+				background: #ddd;
+				font-size: 34px;
+				color: #cca;
+				padding: 10px 0px 0px 10px;
+			}
+			.nmpj{
+				margin: 30px;
+			}
+			.nmpj_one{
+				width: 200px;
+				height: 200px;
+			}
+			.input1{
+				width: 50px;
+				height: 50px;
+			}
+			.hidden1{
+				overflow: hidden;
+				margin:20px 0px 0px 10px;
+			}
+			.input1{
+				float: left;
+				margin-top: 10px;
+				background: red;
+				}
+			.gray{
+				width: 100%;
+				height: 30px;
+				background: #ddd;
+			}
+			.outer_th{
+				margin: 20px;
+			}
+			.wuliu{
+				float: left;
+			}
+			.fivexing{
+				float: right;
+			}
+			.bot{
+				margin: 0 auto;
+				width: 80%;
+				height: 400px;
+							}
+			.bot span{
+				margin-right: 140px;
+			}
+			.bot .botp{
+				margin-top:20px; 
+			}
+			.niming{
+				margin-left:10px; 
+			}
+			.color{
+				color: red;
+			}
+		}
+	</style>
+	<script>
+	</script>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner_one">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</div>
+		<div class="inner">评价晒单</div>
+		<div class="inner2 "><a href="#">提交</a></div>
+	</div>
+	<hr/>
+	<div class="outer_two">
+		<div class="nike f_l">
+			<img src="nike.png" alt="" width="100%">
+		</div>
+		<div class="pingfen f_l">
+			<div>商品评分</div>
+			<div class="xingxing">
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+				<span class="glyphicon glyphicon-star"></span>
+			</div>
+		</div>
+	</div>
+	<div class="mengban">
+		评价大于20元的商品超过10个字就有机会获得豆子
+	</div>
+	<div class="nmpj">
+		<div class="nmpj_one">
+			<img src="nike.jpg" alt="" width="100%">
+		</div>
+		<div class="hidden1"><input type="checkbox" class="input1"><span class="niming">匿名评价</span></div>
+	</div>
+	<div class="gray">
+		
+	</div>
+	<div class="outer_th hidden1">
+		<div class="wuliu f_l"><span class="glyphicon glyphicon-road"></span>物流服务评价</div>
+		<div class="fivexing f_r">满意请给5星哦</div>
+		<div style="clear: both;"></div>
+		<hr/>
+		<div class="bot">
+			<p class="botp">
+				<span>商品符合页</span>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+			</p>
+			<p class="botp">
+				<span>商品符合页</span>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+			</p>
+			<p class="botp">
+				<span>商品符合页</span>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+			</p>
+			<p class="botp">
+				<span>商品符合页</span>
+				<i class="glyphicon glyphicon-star "></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+			</p>
+		</div>
+	</div>
+	<script>
+		$(".glyphicon").on("click", function() {
+		$(this).prevAll().addClass("color");
+		$(this).addClass("color");
+		$(this).nextAll().removeClass("color");
+		})
+	</script>
+	
+</body>
+</html>
